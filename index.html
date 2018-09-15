@@ -20,6 +20,22 @@
 
     <!-- Custom styles for this template -->
     <link href="css/resume.min.css" rel="stylesheet">
+    <link href="react-chat-widget/lib/styles.css" >
+
+    <!-- Load React. -->
+  <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120229914-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-120229914-2');
+</script>
 
   </head>
 
@@ -182,36 +198,13 @@
         <div class="my-auto">
           <h2 class="mb-5">Projects</h2>
 
-          <ul class="nav nav-tabs">
-              <li class="nav-item">
-                <a class="nav-link active" data-toggle="tab" href="#home">Web Projects</a>
-               
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#home">Big data Projects</a>
-                
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#home">Machine learning Projects</a>
-              </li>
-
-              <li class="nav-item">
-                  <a class="nav-link" data-toggle="tab" href="#home">Mobile  Projects</a>
-                </li>
+         
              
-            </ul>
+      
+       
 
 
-            <div class="tab-content">
-                <div id="web" class="tab-pane fade in active">
-                  <h3>HOME</h3>
-                  <p>Some content.</p>
-                </div>
-                <div id="menu1" class="tab-pane fade">
-                  <h3>Menu 1</h3>
-                  <p>Some content in menu 1.</p>
-                </div>
-              </div>
+           
           
         </div>
       </section>
@@ -505,21 +498,64 @@
 
 
     </div>
+    
+    <!-- Plugin JavaScript -->
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Plugin JavaScript -->
+
+
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+
+
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="js/jquery.multipurpose_tabcontent.js"></script>
     <script type="application/javascript">
     console.log("hh")
       $('.carousel').carousel()
     </script>
+        <script type="text/javascript">
+          $(document).ready(function() {
+  
+              $(".first_tab").champ();
+  
+              $(".accordion_example").champ({
+                  plugin_type: "accordion",
+                  side: "left",
+                  active_tab: "3",
+                  controllers: "true"
+              });
+  
+              $(".second_tab").champ({
+                  plugin_type: "tab",
+                  side: "right",
+                  active_tab: "1",
+                  controllers: "false"
+              });
+  
+              $(".third_tab").champ({
+                  plugin_type: "tab",
+                  side: "",
+                  active_tab: "4",
+                  controllers: "true",
+                  ajax: "true",
+                  show_ajax_content_in_tab: "4",
+                  content_path: "html.txt"
+              });
+              $(".multipleTab").champ({
+                  //plugin_type :  "accordion",
+                  multiple_tabs: "true"
+              });
+  
+          });
+      </script>
 
     <!-- Custom scripts for this template -->
     <script src="js/resume.min.js"></script>
-  
+    <script src="js/ProjectsComponent.js"></script>
 
   </body>
 

@@ -1,0 +1,27 @@
+/*ServiceConverter.ReadSingleFile('/home/ahmed/Desktop/Chatbot_rh/my-project/client/public/uploads/Gassa_Tarek_Sociologue.pdf')
+.then(function(pathfile){ 
+  console.log("path file fie txt" + pathfile)
+
+  executeServiceMinner.executeServiceMinner(pathfile)
+  .then(function(result) {
+    console.log('the ServiceMinner is working hmd !!!' + JSON.stringify(result));
+  }).catch(function(err){
+    console.log('err miing !')
+  })
+
+}).catch(function(err){
+  console.log('err' + JSON.stringify(err))
+})*/
+
+
+
+
+//ServiceIndexation.Create_Index()
+/*var d = moment(new Date()).format('dddd MMMM D Y')
+ServiceIndexation.Create_Index()
+ServiceIndexation.Search(null,d,null,"","isi",["Drupal"],"developpeur")
+ServiceIndexation.(json_data)*/
+
+//ServiceMailAccess2.GetResumes()
+// The "catchall" handler: for any request that doesn't
+// match one above, send back React's index.html file.

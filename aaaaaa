@@ -1,0 +1,1 @@
+<Button color="info"  onClick={(e) => this.ViewResume(el._source.fileName,e)}>View Resume </Button> 
