@@ -1,0 +1,14 @@
+[
+  {
+    "name": "FullStackOps",
+    "description": "Monorepo with CI/CD, Docker, Nx, Vue, NestJS, MongoDB, and GitHub Actions.",
+    "url": "https://github.com/Rebaiahmed/FullStackOps",
+    "tags": ["fullstack", "vue", "angular", "nestjs", "mongodb", "eslint", "ci-cd", "nx", "docker", "aws", "testing"]
+  },
+  {
+    "name": "Signal Store Tasks",
+    "description": "Angular app using signal store for reactive task management.",
+    "url": "https://github.com/Rebaiahmed/task-manager-signals",
+    "tags": ["angular", "signals", "state-management", "ngrx", "frontend"]
+  }
+]

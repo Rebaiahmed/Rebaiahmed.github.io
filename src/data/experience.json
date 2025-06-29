@@ -1,0 +1,23 @@
+[
+  {
+    "role": "Senior Full Stack Developer",
+    "company": "CompuGroup Medical",
+    "start": "Apr 2022",
+    "end": "Present",
+    "description": "Leading Agile development in a Scrum team for a modular healthcare software platform. Built scalable Angular + Nx frontends and Node.js (NestJS) APIs. Integrated CI/CD workflows via GitHub Actions and Docker. Focused on frontend performance, code quality, and mentoring."
+  },
+  {
+    "role": "Frontend Developer",
+    "company": "Entimo AG",
+    "start": "Aug 2020",
+    "end": "Mar 2022",
+    "description": "Worked on a clinical trial management product. Developed Angular-based frontend with RxJS and component libraries in Storybook. Advocated Cypress E2E testing. Collaborated in an Agile team to release product iterations biweekly."
+  },
+  {
+    "role": "Full Stack Developer",
+    "company": "be-softilys",
+    "start": "Jan 2018",
+    "end": "Jul 2020",
+    "description": "Built health diagnostics dashboards using Angular, Node.js, and PostgreSQL. Deployed on AWS EC2. Delivered REST APIs with Express and implemented monitoring and logging. Participated in cross-functional Agile teams."
+  }
+]

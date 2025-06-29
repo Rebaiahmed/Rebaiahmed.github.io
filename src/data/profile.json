@@ -1,0 +1,8 @@
+{
+  "name": "Ahmed Rebai",
+  "title": "Senior Software Engineer",
+  "location": "Berlin, Germany",
+  "resume": "assets/resume.pdf",
+  "bio": "Experienced full stack engineer focused on building scalable applications using Angular, Vue, NestJS, Docker, Nx, and AWS.",
+  "skills": ["Angular", "Vue", "NestJS", "TypeScript", "Docker", "Kubernetes", "GraphQL", "AWS", "Nx", "CI/CD"]
+}

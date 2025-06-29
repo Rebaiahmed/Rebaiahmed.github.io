@@ -1,0 +1,26 @@
+[
+  {
+    "title": "6 Frontend Technical Debts I Regret Writing",
+    "url": "https://medium.com/@ahmedrebai/frontend-technical-debts-fixed",
+    "published": "May 2025",
+    "tags": [
+      "Vue",
+      "Angular",
+      "State Management",
+      "CSS"
+    ]
+  },
+  {
+    "title": "FullStackOps: CI/CD and Testing in Nx",
+    "url": "https://medium.com/@ahmedrebai/fullstackops-monorepo",
+    "published": "April 2025",
+    "tags": [
+      "Nx",
+      "Monorepo",
+      "CI/CD",
+      "Docker",
+      "GitHub Actions",
+      "Node.js"
+    ]
+  }
+]
