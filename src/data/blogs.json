@@ -3,24 +3,30 @@
     "title": "6 Frontend Technical Debts I Regret Writing",
     "url": "https://medium.com/@ahmedrebai/frontend-technical-debts-fixed",
     "published": "May 2025",
-    "tags": [
-      "Vue",
-      "Angular",
-      "State Management",
-      "CSS"
-    ]
+    "tags": ["Vue", "Angular", "State Management", "CSS"]
   },
   {
-    "title": "FullStackOps: CI/CD and Testing in Nx",
-    "url": "https://medium.com/@ahmedrebai/fullstackops-monorepo",
-    "published": "April 2025",
-    "tags": [
-      "Nx",
-      "Monorepo",
-      "CI/CD",
-      "Docker",
-      "GitHub Actions",
-      "Node.js"
-    ]
+    "title": "Optimizing Angular Unit Tests for Faster Execution ⏳⏰",
+    "url": "https://levelup.gitconnected.com/optimizing-angular-unit-tests-for-faster-execution-70c7adda6b21",
+    "published": "Jan 23, 2023",
+    "tags": ["Angular", "Testing", "Performance"]
+  },
+  {
+    "title": "Optimize Angular Bundle Size with These Steps",
+    "url": "https://levelup.gitconnected.com/lets-optimize-angular-bundle-size-with-these-steps-6d6b753ac256",
+    "published": "Dec 9, 2022",
+    "tags": ["Angular", "Performance", "Optimization"]
+  },
+  {
+    "title": "Best Practices for Component Design and Architecture in Angular",
+    "url": "https://levelup.gitconnected.com/best-practices-for-component-design-and-architecture-in-angular-7dfed7c9aa36",
+    "published": "May 14, 2024",
+    "tags": ["Angular", "Architecture", "Best Practices"]
+  },
+  {
+    "title": "Building Better Angular Apps: Exploring Control Flow Syntax, Signals, and the New Build System ⚡️",
+    "url": "https://javascript.plainenglish.io/building-better-angular-apps-exploring-control-flow-syntax-signals-and-the-new-build-system-%EF%B8%8F-b4e5c32498f0",
+    "published": "Nov 17, 2024",
+    "tags": ["Angular", "Signals", "Control Flow", "Vite", "RxJS"]
   }
 ]
