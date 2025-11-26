@@ -1,14 +1,20 @@
 [
   {
-    "name": "FullStackOps",
-    "description": "Monorepo with CI/CD, Docker, Nx, Vue, NestJS, MongoDB, and GitHub Actions.",
-    "url": "https://github.com/Rebaiahmed/FullStackOps",
-    "tags": ["fullstack", "vue", "angular", "nestjs", "mongodb", "eslint", "ci-cd", "nx", "docker", "aws", "testing"]
+    "name": "Terraform AWS EC2 POC (Beginner Friendly)",
+    "description": "A simple Terraform project that creates a server on AWS EC2. The server runs Amazon Linux 2 and has Nginx installed. Terraform also makes an SSH key so you can log in. Good for beginners learning cloud and Terraform.",
+    "url": "https://github.com/Rebaiahmed/terraform-aws-poc",
+    "tags": ["terraform", "aws", "ec2", "nginx", "infrastructure", "iac", "cloud", "beginner-friendly"]
   },
   {
-    "name": "Signal Store Tasks",
-    "description": "Angular app using signal store for reactive task management.",
-    "url": "https://github.com/Rebaiahmed/task-manager-signals",
-    "tags": ["angular", "signals", "state-management", "ngrx", "frontend"]
+    "name": "Vue 3 + Vite + AWS S3 Deployment",
+    "description": "This is a Vue 3 app built with Vite, deployed to AWS S3 and CloudFront using GitHub Actions.",
+    "url": "https://github.com/Rebaiahmed/front-end-app-s3-aws",
+    "tags": ["vue", "vite", "aws", "s3", "cloudfront", "github-actions", "ci-cd", "frontend", "deployment"]
+  },
+  {
+    "name": "NestJS + Docker + AWS EC2",
+    "description": "A simple Proof of Concept backend app built with NestJS, containerized using Docker, and deployed to an AWS EC2 instance.",
+    "url": "https://github.com/Rebaiahmed/aws-backend-deploy",
+    "tags": ["nestjs", "docker", "aws", "ec2", "backend", "containerization", "deployment", "poc"]
   }
 ]
