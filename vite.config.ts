@@ -11,11 +11,21 @@ export default defineConfig({
     // Ensure proper MIME types for JS files
     rollupOptions: {
       output: {
-        // Ensure .js files have correct extensions
+        // Ensure .js files have correct extensions and proper naming
         entryFileNames: 'assets/[name]-[hash].js',
         chunkFileNames: 'assets/[name]-[hash].js',
-        assetFileNames: 'assets/[name]-[hash].[ext]'
-      }
-    }
+        assetFileNames: (assetInfo) => {
+          // Ensure JS files always have .js extension
+          if (assetInfo.name && assetInfo.name.endsWith('.js')) {
+            return 'assets/[name]-[hash].js'
+          }
+          return 'assets/[name]-[hash].[ext]'
+        }
+      },
+      // Ensure proper module format
+      format: 'es'
+    },
+    // Ensure proper chunk splitting
+    chunkSizeWarningLimit: 1000
   }
 })

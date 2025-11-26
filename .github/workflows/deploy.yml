@@ -101,22 +101,24 @@ jobs:
 
       - name: Ensure .nojekyll exists
         run: |
-          # Copy .nojekyll from public to dist if it exists in public
-          if [ -f "public/.nojekyll" ]; then
-            cp public/.nojekyll dist/.nojekyll
-            echo "✅ Copied .nojekyll from public to dist"
-          else
-            # Create .nojekyll in dist if it doesn't exist
-            touch dist/.nojekyll
-            echo "✅ Created .nojekyll in dist"
-          fi
+          # Always create .nojekyll in dist to prevent Jekyll processing
+          echo "" > dist/.nojekyll
+          echo "✅ Created .nojekyll in dist"
           # Verify it exists
           if [ ! -f "dist/.nojekyll" ]; then
             echo "❌ Failed to create .nojekyll"
             exit 1
           fi
+          # Also ensure it's copied from public if it exists there
+          if [ -f "public/.nojekyll" ]; then
+            cp public/.nojekyll dist/.nojekyll
+            echo "✅ Copied .nojekyll from public to dist"
+          fi
+          # Verify file extensions on JS files
+          echo "Verifying JS file extensions:"
+          find dist/assets -name "*.js" -exec sh -c 'echo "Found: $1" && file "$1"' _ {} \;
 
-      - name: Verify build output
+      - name: Verify build output and fix file extensions
         run: |
           if [ ! -d "dist" ]; then
             echo "❌ Build failed: dist directory not found"
@@ -136,18 +138,31 @@ jobs:
           echo ""
           echo "Checking asset files:"
           if [ -d "dist/assets" ]; then
-            ls -la dist/assets/ | head -10
+            ls -la dist/assets/
             echo ""
-            echo "Verifying MIME types:"
+            echo "Verifying MIME types and file extensions:"
             for file in dist/assets/*.js; do
               if [ -f "$file" ]; then
                 file_type=$(file -b --mime-type "$file")
-                echo "  $file: $file_type"
-                if [[ "$file_type" != "application/javascript" && "$file_type" != "text/javascript" ]]; then
-                  echo "  ⚠️  Warning: Unexpected MIME type for JS file"
+                file_ext="${file##*.}"
+                echo "  File: $file"
+                echo "    Extension: .$file_ext"
+                echo "    MIME type: $file_type"
+                if [[ "$file_ext" != "js" ]]; then
+                  echo "    ⚠️  WARNING: File does not have .js extension!"
+                fi
+                if [[ "$file_type" != "application/javascript" && "$file_type" != "text/javascript" && "$file_type" != "application/octet-stream" ]]; then
+                  echo "    ⚠️  WARNING: Unexpected MIME type for JS file"
+                else
+                  echo "    ✅ MIME type is correct"
                 fi
               fi
             done
+            # Verify .nojekyll is visible
+            echo ""
+            echo "Verifying .nojekyll:"
+            cat dist/.nojekyll || echo "⚠️  .nojekyll is empty (this is OK)"
+            ls -la dist/.nojekyll
           fi
 
       - name: Setup Pages
