@@ -7,6 +7,7 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
+    sourcemap: false, // Disable source maps to prevent MIME type issues
     // Ensure proper MIME types for JS files
     rollupOptions: {
       output: {
