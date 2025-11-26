@@ -1,5 +1,19 @@
 [
   {
+    "name": "NexusCommerce — Full-Stack E-Commerce & AI Microservices Platform",
+    "description": "A comprehensive full-stack e-commerce platform built with microservices architecture, featuring AI-powered recommendations, multi-database support, and cloud-native deployment on AWS with Kubernetes.",
+    "url": "https://github.com/Rebaiahmed/nexus-commerce",
+    "terminalHeader": "🧭 NexusCommerce",
+    "githubBadge": true,
+    "commands": [
+      "project open nexus-commerce",
+      "project logs nexus-commerce",
+      "project docs nexus-commerce"
+    ],
+    "readme": "PLACEHOLDER_README_CONTENT",
+    "tags": ["aws", "devops", "microservices", "ecommerce", "ai", "langchain", "openai", "kubernetes", "docker", "nestjs", "django", "spring-boot", "redis", "postgresql", "mongodb", "neo4j", "kafka", "ci-cd"]
+  },
+  {
     "name": "Terraform AWS EC2 POC (Beginner Friendly)",
     "description": "A simple Terraform project that creates a server on AWS EC2. The server runs Amazon Linux 2 and has Nginx installed. Terraform also makes an SSH key so you can log in. Good for beginners learning cloud and Terraform.",
     "url": "https://github.com/Rebaiahmed/terraform-aws-poc",
