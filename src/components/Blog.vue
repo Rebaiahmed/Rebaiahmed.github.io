@@ -49,9 +49,47 @@ import blogs from '../data/blogs.json'
 
 const selectedTag = ref('')
 const allTags = [...new Set(blogs.flatMap(post => post.tags))]
-const filteredBlogs = computed(() =>
-  selectedTag.value
+
+// Parse date string to Date object for sorting
+const parseDate = (dateStr) => {
+  // Handle different date formats
+  if (dateStr.includes('May 2025')) return new Date('2025-05-01')
+  if (dateStr.includes('2024')) {
+    // Format: "Nov 17, 2024" or "May 6, 2024"
+    const parts = dateStr.match(/(\w+)\s+(\d+),?\s+(\d+)/)
+    if (parts) {
+      const monthMap = { Jan: 0, Feb: 1, Mar: 2, Apr: 3, May: 4, Jun: 5, Jul: 6, Aug: 7, Sep: 8, Oct: 9, Nov: 10, Dec: 11 }
+      return new Date(parseInt(parts[3]), monthMap[parts[1]], parseInt(parts[2]))
+    }
+  }
+  if (dateStr.includes('2023')) {
+    const parts = dateStr.match(/(\w+)\s+(\d+),?\s+(\d+)/)
+    if (parts) {
+      const monthMap = { Jan: 0, Feb: 1, Mar: 2, Apr: 3, May: 4, Jun: 5, Jul: 6, Aug: 7, Sep: 8, Oct: 9, Nov: 10, Dec: 11 }
+      return new Date(parseInt(parts[3]), monthMap[parts[1]], parseInt(parts[2]))
+    }
+  }
+  if (dateStr.includes('2022')) {
+    const parts = dateStr.match(/(\w+)\s+(\d+),?\s+(\d+)/)
+    if (parts) {
+      const monthMap = { Jan: 0, Feb: 1, Mar: 2, Apr: 3, May: 4, Jun: 5, Jul: 6, Aug: 7, Sep: 8, Oct: 9, Nov: 10, Dec: 11 }
+      return new Date(parseInt(parts[3]), monthMap[parts[1]], parseInt(parts[2]))
+    }
+  }
+  // Fallback for unknown formats
+  return new Date(0)
+}
+
+const filteredBlogs = computed(() => {
+  const filtered = selectedTag.value
     ? blogs.filter(post => post.tags.includes(selectedTag.value))
     : blogs
-)
+  
+  // Sort by date (newest first)
+  return [...filtered].sort((a, b) => {
+    const dateA = parseDate(a.published)
+    const dateB = parseDate(b.published)
+    return dateB - dateA
+  })
+})
 </script>

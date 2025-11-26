@@ -6,27 +6,135 @@
     "tags": ["Vue", "Angular", "State Management", "CSS"]
   },
   {
-    "title": "Optimizing Angular Unit Tests for Faster Execution ⏳⏰",
-    "url": "https://levelup.gitconnected.com/optimizing-angular-unit-tests-for-faster-execution-70c7adda6b21",
-    "published": "Jan 23, 2023",
-    "tags": ["Angular", "Testing", "Performance"]
+    "title": "Building Better Angular Apps: Exploring Control Flow Syntax, Signals, and the New Build System ⚡️",
+    "url": "https://javascript.plainenglish.io/building-better-angular-apps-exploring-control-flow-syntax-signals-and-the-new-build-system-%EF%B8%8F-b4e5c32498f0",
+    "published": "Nov 17, 2024",
+    "tags": ["Angular", "Signals", "Control Flow", "Vite", "RxJS"]
   },
   {
-    "title": "Optimize Angular Bundle Size with These Steps",
-    "url": "https://levelup.gitconnected.com/lets-optimize-angular-bundle-size-with-these-steps-6d6b753ac256",
-    "published": "Dec 9, 2022",
-    "tags": ["Angular", "Performance", "Optimization"]
+    "title": "Task Manager App with NgRx Signal store 🔧✔️",
+    "url": "https://javascript.plainenglish.io/task-manager-app-with-ngrx-signal-store",
+    "published": "May 6, 2024",
+    "tags": ["Angular", "NgRx", "Signals", "State Management"]
+  },
+  {
+    "title": "Cypress: The Key to Angular Component Testing 🔨🔑📌",
+    "url": "https://levelup.gitconnected.com/cypress-the-key-to-angular-component-testing",
+    "published": "Apr 28, 2024",
+    "tags": ["Angular", "Cypress", "Testing", "E2E"]
+  },
+  {
+    "title": "🚀 How to Configure a Proxy in Angular for API Calls",
+    "url": "https://levelup.gitconnected.com/how-to-configure-a-proxy-in-angular-for-api-calls",
+    "published": "Apr 28, 2024",
+    "tags": ["Angular", "Proxy", "API", "Configuration"]
+  },
+  {
+    "title": "Angular Schematics 🤖: How to Define and Use Custom Prefixes 🏷️🔧",
+    "url": "https://levelup.gitconnected.com/angular-schematics-how-to-define-and-use-custom-prefixes",
+    "published": "Apr 28, 2024",
+    "tags": ["Angular", "Schematics", "CLI", "Tooling"]
+  },
+  {
+    "title": "Angular: From RxJS to Signals Made Easy",
+    "url": "https://medium.com/@ahmedrebai/angular-from-rxjs-to-signals-made-easy",
+    "published": "Apr 1, 2024",
+    "tags": ["Angular", "Signals", "RxJS", "Migration"]
+  },
+  {
+    "title": "Learn Angular Signals the Easy Way with Examples 🛠",
+    "url": "https://levelup.gitconnected.com/learn-angular-signals-the-easy-way-with-examples",
+    "published": "Dec 8, 2024",
+    "tags": ["Angular", "Signals", "Tutorial", "Examples"]
+  },
+  {
+    "title": "Mastering Custom Providers in Angular's Dependency Injection 👋🔨",
+    "url": "https://levelup.gitconnected.com/mastering-custom-providers-in-angulars-dependency-injection",
+    "published": "Aug 11, 2024",
+    "tags": ["Angular", "Dependency Injection", "Providers", "Advanced"]
+  },
+  {
+    "title": "Mastering the Power of @ViewChild and @ContentChild in Angular",
+    "url": "https://levelup.gitconnected.com/mastering-the-power-of-viewchild-and-contentchild-in-angular",
+    "published": "Aug 5, 2024",
+    "tags": ["Angular", "ViewChild", "ContentChild", "Component Communication"]
+  },
+  {
+    "title": "Exploring View Encapsulation in Angular: Styling Components Effectively 🔧✔️",
+    "url": "https://levelup.gitconnected.com/exploring-view-encapsulation-in-angular-styling-components-effectively",
+    "published": "Aug 4, 2024",
+    "tags": ["Angular", "Styling", "View Encapsulation", "CSS"]
+  },
+  {
+    "title": "Angular Error Handling Made Easy: Implementing a Global Error Handler and Robust Logging with…",
+    "url": "https://levelup.gitconnected.com/angular-error-handling-made-easy-implementing-a-global-error-handler-and-robust-logging",
+    "published": "Jun 11, 2024",
+    "tags": ["Angular", "Error Handling", "Logging", "Best Practices"]
+  },
+  {
+    "title": "Unlocking the Power of APP_INITIALIZER in Your Angular Projects",
+    "url": "https://levelup.gitconnected.com/unlocking-the-power-of-app-initializer-in-your-angular-projects",
+    "published": "May 28, 2024",
+    "tags": ["Angular", "APP_INITIALIZER", "Bootstrap", "Advanced"]
+  },
+  {
+    "title": "Creating custom directives in Angular for reusable UI components 🛠🔫",
+    "url": "https://levelup.gitconnected.com/creating-custom-directives-in-angular-for-reusable-ui-components",
+    "published": "May 26, 2024",
+    "tags": ["Angular", "Directives", "Reusability", "UI Components"]
+  },
+  {
+    "title": "Best practices for testing with Angular ✅",
+    "url": "https://levelup.gitconnected.com/best-practices-for-testing-with-angular",
+    "published": "May 24, 2024",
+    "tags": ["Angular", "Testing", "Best Practices", "Jest"]
   },
   {
     "title": "Best Practices for Component Design and Architecture in Angular",
     "url": "https://levelup.gitconnected.com/best-practices-for-component-design-and-architecture-in-angular-7dfed7c9aa36",
     "published": "May 14, 2024",
-    "tags": ["Angular", "Architecture", "Best Practices"]
+    "tags": ["Angular", "Architecture", "Best Practices", "Component Design"]
   },
   {
-    "title": "Building Better Angular Apps: Exploring Control Flow Syntax, Signals, and the New Build System ⚡️",
-    "url": "https://javascript.plainenglish.io/building-better-angular-apps-exploring-control-flow-syntax-signals-and-the-new-build-system-%EF%B8%8F-b4e5c32498f0",
-    "published": "Nov 17, 2024",
-    "tags": ["Angular", "Signals", "Control Flow", "Vite", "RxJS"]
+    "title": "Best practices for using RxJS with Angular",
+    "url": "https://levelup.gitconnected.com/best-practices-for-using-rxjs-with-angular",
+    "published": "Apr 28, 2024",
+    "tags": ["Angular", "RxJS", "Reactive Programming", "Best Practices"]
+  },
+  {
+    "title": "Mastering TypeScript: Best Practices for Angular Developers",
+    "url": "https://levelup.gitconnected.com/mastering-typescript-best-practices-for-angular-developers",
+    "published": "Apr 24, 2024",
+    "tags": ["TypeScript", "Angular", "Best Practices", "Type Safety"]
+  },
+  {
+    "title": "Code Review Checklist for Angular Developers ✏️ 🔍",
+    "url": "https://javascript.plainenglish.io/code-review-checklist-for-angular-developers",
+    "published": "Oct 31, 2023",
+    "tags": ["Angular", "Code Review", "Best Practices", "Quality"]
+  },
+  {
+    "title": "Real-World Impact of Angular v16 Latest Features",
+    "url": "https://medium.com/@ahmedrebai/real-world-impact-of-angular-v16-latest-features",
+    "published": "Oct 9, 2023",
+    "tags": ["Angular", "v16", "Features", "Updates"]
+  },
+  {
+    "title": "Advanced tricks with Angular forms 📕",
+    "url": "https://medium.com/@ahmedrebai/advanced-tricks-with-angular-forms",
+    "published": "Sep 25, 2023",
+    "tags": ["Angular", "Forms", "Reactive Forms", "Advanced"]
+  },
+  {
+    "title": "Optimizing Angular Unit Tests for Faster Execution ⏳⏰",
+    "url": "https://levelup.gitconnected.com/optimizing-angular-unit-tests-for-faster-execution-70c7adda6b21",
+    "published": "Jan 23, 2023",
+    "tags": ["Angular", "Testing", "Performance", "Optimization"]
+  },
+  {
+    "title": "Optimize Angular Bundle Size with These Steps",
+    "url": "https://levelup.gitconnected.com/lets-optimize-angular-bundle-size-with-these-steps-6d6b753ac256",
+    "published": "Dec 9, 2022",
+    "tags": ["Angular", "Performance", "Optimization", "Bundle Size"]
   }
 ]
