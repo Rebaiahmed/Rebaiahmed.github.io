@@ -1,23 +1,94 @@
 [
   {
-    "role": "Senior Full Stack Developer",
-    "company": "CompuGroup Medical",
-    "start": "Apr 2022",
+    "role": "Frontend Developer",
+    "company": "CompuGroup Medical SE & Co. KGaA",
+    "start": "Oct 2024",
     "end": "Present",
-    "description": "Leading Agile development in a Scrum team for a modular healthcare software platform. Built scalable Angular + Nx frontends and Node.js (NestJS) APIs. Integrated CI/CD workflows via GitHub Actions and Docker. Focused on frontend performance, code quality, and mentoring."
+    "duration": "1 yr 2 mos",
+    "location": "Berlin, Germany",
+    "type": "Hybrid",
+    "summary": "Working in large-scale e-health monorepo, implementing features for patients & healthcare professionals with focus on accessibility and code quality.",
+    "details": [
+      "Working in large-scale e-health monorepo with modern Angular architecture",
+      "Implement feature development for patients & healthcare professionals",
+      "Collaborate with QA + UX teams to implement precise, accessible UI",
+      "Introduce frontend improvements and code review practices",
+      "Maintain high code quality standards in enterprise healthcare environment"
+    ],
+    "tech": ["Angular", "Nx", "Signals", "Tailwind", "GitLab CI", "UI/UX", "Agile", "TypeScript"]
   },
   {
     "role": "Frontend Developer",
     "company": "Entimo AG",
-    "start": "Aug 2020",
-    "end": "Mar 2022",
-    "description": "Worked on a clinical trial management product. Developed Angular-based frontend with RxJS and component libraries in Storybook. Advocated Cypress E2E testing. Collaborated in an Agile team to release product iterations biweekly."
+    "start": "Aug 2021",
+    "end": "Sep 2024",
+    "duration": "3 yrs 2 mos",
+    "location": "Berlin, Germany",
+    "type": "Full-time",
+    "summary": "Developed FastTrack statistical computing environment, focusing on E2E testing, legacy refactoring, and Agile collaboration.",
+    "details": [
+      "Worked on FastTrack: a statistical computing environment for clinical trials",
+      "E2E testing with Cypress for reliable test coverage",
+      "Refactoring legacy codebases to modern Angular patterns",
+      "Agile collaboration (Scrum) with cross-functional teams",
+      "Component library development and UI/UX improvements",
+      "Continuous integration and deployment workflows"
+    ],
+    "tech": ["Angular", "Git", "RxJS", "Akita", "Jenkins", "Cypress", "Unit tests", "UI/UX", "TypeScript"]
   },
   {
-    "role": "Full Stack Developer",
-    "company": "be-softilys",
-    "start": "Jan 2018",
-    "end": "Jul 2020",
-    "description": "Built health diagnostics dashboards using Angular, Node.js, and PostgreSQL. Deployed on AWS EC2. Delivered REST APIs with Express and implemented monitoring and logging. Participated in cross-functional Agile teams."
+    "role": "Full-stack Developer",
+    "company": "be-softilys Tunisie",
+    "start": "Aug 2019",
+    "end": "Jul 2021",
+    "duration": "2 yrs",
+    "location": "Tunisia",
+    "type": "Full-time",
+    "summary": "Contributed to Almerys healthcare project and mobile POS systems, implementing state management and full-stack solutions.",
+    "details": [
+      "Contributed to Almerys project (Spring Boot, MongoDB, RxJS, NGRX, Keycloak, GitLab CI)",
+      "Full-stack work for be-ys (mobile POS projects)",
+      "Insurance claims system: scheduled jobs, refactoring, JUnit + Mockito tests",
+      "Introduced state management with RxJS + NGRX",
+      "Scrum team: Sprint planning, Daily meetings, Retrospectives",
+      "Backend API development and database optimization"
+    ],
+    "tech": ["Spring Boot", "MongoDB", "RxJS", "NGRX", "Keycloak", "GitLab CI", "JUnit", "Mockito", "Angular", "Node.js"]
+  },
+  {
+    "role": "Freelancer",
+    "company": "Self-employed",
+    "start": "Jun 2018",
+    "end": "Nov 2020",
+    "duration": "2 yrs 6 mos",
+    "location": "Tunisia",
+    "type": "Freelance",
+    "summary": "Delivered full-stack solutions including TaskBoard for private schools, backend APIs, and AI-based mobile applications.",
+    "details": [
+      "TaskBoard for private school (Angular, Firebase, Node.js, Docker)",
+      "Backend API for mobile apps (Express.js, Swagger, Node.js)",
+      "AI-based mobile app for brand recognition and promotions",
+      "Implemented authentication, favorites, history, push notifications",
+      "Client consultation and project management",
+      "Full-stack development and deployment"
+    ],
+    "tech": ["Angular", "Node.js", "React Native", "Firebase", "Express.js", "Swagger", "Docker", "JavaScript"]
+  },
+  {
+    "role": "React.js / React Native Instructor",
+    "company": "FormaLab",
+    "start": "Feb 2019",
+    "end": "Mar 2019",
+    "duration": "2 months",
+    "location": "Tunis, Tunisia",
+    "type": "Part-time",
+    "summary": "Taught React.js and React Native development to students, covering modern frontend patterns and mobile app development.",
+    "details": [
+      "Taught React.js fundamentals and advanced patterns",
+      "React Native mobile app development",
+      "Hands-on project-based learning approach",
+      "Mentored students on best practices and code quality"
+    ],
+    "tech": ["React", "React Native", "JavaScript", "Teaching", "Mentoring"]
   }
 ]
