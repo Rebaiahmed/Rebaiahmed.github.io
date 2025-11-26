@@ -2,7 +2,7 @@
   <section id="experience" class="p-6 bg-black text-green-400 font-mono min-h-screen">
     <h2 class="text-2xl font-bold mb-6 border-b border-green-600">💼 Experience</h2>
 
-    <!-- CLI Terminal (Optional) -->
+    <!-- CLI Terminal -->
     <div class="bg-[#0a0a0a] border border-green-800 rounded-lg p-4 mb-6 shadow-[0_0_20px_rgba(34,197,94,0.1)]">
       <div class="mb-2 text-green-500 text-sm">➜ experience <span class="text-green-600">~</span> $</div>
       <input
@@ -12,12 +12,12 @@
         placeholder="Type: ls, open &lt;company&gt;, filter &lt;tech&gt;, clear"
         class="w-full bg-black text-green-200 border-b border-green-700 outline-none pb-1"
       />
-      <div v-if="commandOutput" class="mt-3 text-green-300 text-sm space-y-1">
+      <div v-if="commandOutput.length > 0" class="mt-3 text-green-300 text-sm space-y-1">
         <div v-for="(line, index) in commandOutput" :key="index" class="animate-fade-in">
           {{ line }}
         </div>
       </div>
-      <div v-if="!command && !commandOutput" class="mt-2 text-green-700 text-xs italic">
+      <div v-if="!command && commandOutput.length === 0" class="mt-2 text-green-700 text-xs italic">
         Commands: <span class="text-green-500">ls</span> | 
         <span class="text-green-500">open &lt;company&gt;</span> | 
         <span class="text-green-500">filter &lt;tech&gt;</span> | 
@@ -26,44 +26,58 @@
     </div>
 
     <!-- Experience List -->
-    <div class="space-y-4">
+    <div class="space-y-5">
       <div
         v-for="(job, index) in filteredExperience"
-        :key="`${job.company}-${index}`"
+        :key="`${job.company}-${job.start}`"
         :data-job-index="getOriginalIndex(job)"
         class="border border-green-800 rounded-lg bg-[#0a0a0a] hover:border-green-700 transition-all overflow-hidden"
         :class="{ 'border-green-500 shadow-[0_0_15px_rgba(34,197,94,0.2)]': expandedJobs.has(getOriginalIndex(job)) }"
       >
-        <!-- Header -->
-        <div class="p-4 cursor-pointer" @click="toggleExpand(index)">
-          <div class="flex items-start justify-between">
-            <div class="flex-1">
-              <div class="flex items-center gap-2 mb-1">
+        <!-- Header - Always Visible -->
+        <div class="p-5">
+          <div class="flex items-start justify-between gap-4">
+            <div class="flex-1 min-w-0">
+              <!-- Role and Company -->
+              <div class="flex items-center gap-2 mb-2 flex-wrap">
                 <h3 class="text-lg font-semibold text-green-300">{{ job.role }}</h3>
                 <span class="text-green-600">@</span>
                 <span class="text-green-400 font-semibold">{{ job.company }}</span>
               </div>
-              <div class="flex flex-wrap items-center gap-3 text-sm text-green-500 mb-2">
-                <span>📅 {{ job.start }} → {{ job.end }}</span>
+              
+              <!-- Meta Information -->
+              <div class="flex flex-wrap items-center gap-3 text-sm text-green-500 mb-3">
+                <span class="flex items-center gap-1">
+                  <span>📅</span>
+                  <span>{{ job.start }} → {{ job.end }}</span>
+                </span>
                 <span class="text-green-600">•</span>
-                <span>⏱️ {{ job.duration }}</span>
+                <span class="flex items-center gap-1">
+                  <span>⏱️</span>
+                  <span>{{ job.duration }}</span>
+                </span>
                 <span class="text-green-600">•</span>
-                <span>📍 {{ job.location }}</span>
+                <span class="flex items-center gap-1">
+                  <span>📍</span>
+                  <span>{{ job.location }}</span>
+                </span>
                 <span v-if="job.type" class="text-green-600">•</span>
-                <span v-if="job.type" class="px-2 py-0.5 border border-green-700 rounded text-xs">
+                <span v-if="job.type" class="px-2 py-0.5 border border-green-700 rounded text-xs bg-[#111]">
                   {{ job.type }}
                 </span>
               </div>
-              <p class="text-green-200 text-sm mb-3">{{ job.summary }}</p>
+              
+              <!-- Summary - Always Visible -->
+              <p class="text-green-200 text-sm mb-3 leading-relaxed">{{ job.summary }}</p>
               
               <!-- Tech Stack Pills -->
-              <div class="flex flex-wrap gap-1.5 mb-2">
+              <div class="flex flex-wrap gap-1.5 mb-3">
                 <span
                   v-for="tech in job.tech"
                   :key="tech"
                   @click.stop="filterByTech(tech)"
-                  class="text-xs border px-2 py-0.5 border-green-700 rounded-full cursor-pointer hover:bg-green-800 hover:border-green-500 transition-colors"
-                  :class="selectedTech === tech ? 'bg-green-700 border-green-500' : 'bg-[#111]'"
+                  class="text-xs border px-2 py-0.5 border-green-700 rounded-full cursor-pointer hover:bg-green-800 hover:border-green-500 transition-all"
+                  :class="selectedTech === tech ? 'bg-green-700 border-green-500 text-white' : 'bg-[#111] text-green-300'"
                 >
                   {{ tech }}
                 </span>
@@ -73,25 +87,29 @@
             <!-- Expand/Collapse Button -->
             <button
               @click.stop="toggleExpand(getOriginalIndex(job))"
-              class="ml-4 text-green-500 hover:text-green-300 transition-colors text-sm"
+              class="flex-shrink-0 text-green-500 hover:text-green-300 transition-colors text-sm px-3 py-1 border border-green-700 rounded hover:bg-green-800"
+              :class="expandedJobs.has(getOriginalIndex(job)) ? 'bg-green-800' : ''"
             >
-              {{ expandedJobs.has(getOriginalIndex(job)) ? '▼' : '▶' }}
+              {{ expandedJobs.has(getOriginalIndex(job)) ? '▼ Show less' : '▶ Show more...' }}
             </button>
           </div>
         </div>
 
-        <!-- Expanded Details -->
+        <!-- Expanded Details - Collapsible -->
         <transition name="expand">
           <div v-if="expandedJobs.has(getOriginalIndex(job))" class="border-t border-green-800 bg-[#111]">
-            <div class="p-4 pt-3">
-              <div class="text-green-400 text-sm mb-2 font-semibold">Details:</div>
-              <ul class="space-y-2">
+            <div class="p-5 pt-4">
+              <div class="text-green-400 text-sm mb-3 font-semibold flex items-center gap-2">
+                <span>▸</span>
+                <span>Detailed Responsibilities & Achievements:</span>
+              </div>
+              <ul class="space-y-2.5">
                 <li
                   v-for="(detail, detailIndex) in job.details"
                   :key="detailIndex"
-                  class="text-green-200 text-sm flex items-start gap-2"
+                  class="text-green-200 text-sm flex items-start gap-2.5 leading-relaxed"
                 >
-                  <span class="text-green-600 mt-1">▸</span>
+                  <span class="text-green-600 mt-1 flex-shrink-0">▸</span>
                   <span>{{ detail }}</span>
                 </li>
               </ul>
@@ -102,9 +120,9 @@
     </div>
 
     <!-- Empty State -->
-    <div v-if="filteredExperience.length === 0" class="text-center py-8 text-green-600">
-      <p>No experience found matching your filter.</p>
-      <button @click="clearFilters" class="mt-2 text-green-400 hover:text-green-300 underline">
+    <div v-if="filteredExperience.length === 0" class="text-center py-12 text-green-600">
+      <p class="mb-2">No experience found matching your filter.</p>
+      <button @click="clearFilters" class="mt-3 px-4 py-2 border border-green-700 rounded hover:bg-green-800 text-green-400 hover:text-green-300 transition-colors">
         Clear filters
       </button>
     </div>
@@ -153,6 +171,7 @@ const clearFilters = () => {
   selectedTech.value = ''
   command.value = ''
   commandOutput.value = []
+  expandedJobs.value.clear()
 }
 
 // Parse command
@@ -160,10 +179,41 @@ const parseCommand = (cmd) => {
   const trimmed = cmd.trim().toLowerCase()
   if (!trimmed) return { command: '', args: [] }
   
-  const parts = trimmed.split(/\s+/)
+  // Handle quoted strings
+  const tokens = []
+  let current = ''
+  let inQuotes = false
+  let quoteChar = ''
+  
+  for (let i = 0; i < trimmed.length; i++) {
+    const char = trimmed[i]
+    
+    if ((char === '"' || char === "'") && (i === 0 || trimmed[i - 1] !== '\\')) {
+      if (!inQuotes) {
+        inQuotes = true
+        quoteChar = char
+      } else if (char === quoteChar) {
+        inQuotes = false
+        quoteChar = ''
+      } else {
+        current += char
+      }
+    } else if (char === ' ' && !inQuotes) {
+      if (current) {
+        tokens.push(current)
+        current = ''
+      }
+    } else {
+      current += char
+    }
+  }
+  if (current) tokens.push(current)
+  
+  if (tokens.length === 0) return { command: '', args: [] }
+  
   return {
-    command: parts[0],
-    args: parts.slice(1)
+    command: tokens[0],
+    args: tokens.slice(1)
   }
 }
 
@@ -202,9 +252,9 @@ const executeCommand = () => {
           if (element) {
             element.scrollIntoView({ behavior: 'smooth', block: 'center' })
             // Highlight briefly
-            element.classList.add('border-green-500')
+            element.classList.add('border-green-500', 'shadow-[0_0_20px_rgba(34,197,94,0.3)]')
             setTimeout(() => {
-              element.classList.remove('border-green-500')
+              element.classList.remove('border-green-500', 'shadow-[0_0_20px_rgba(34,197,94,0.3)]')
             }, 2000)
           }
         }, 100)
@@ -219,9 +269,10 @@ const executeCommand = () => {
         break
       }
       const techQuery = parsed.args.join(' ').toLowerCase()
-      const matchingTech = experience
-        .flatMap(job => job.tech)
-        .find(tech => tech.toLowerCase().includes(techQuery))
+      const allTechs = experience.flatMap(job => job.tech)
+      const matchingTech = allTechs.find(tech => 
+        tech.toLowerCase().includes(techQuery)
+      )
       if (matchingTech) {
         selectedTech.value = matchingTech
         commandOutput.value = [`Filtered by: ${matchingTech}`]
@@ -232,7 +283,6 @@ const executeCommand = () => {
       
     case 'clear':
       clearFilters()
-      expandedJobs.value.clear()
       commandOutput.value = ['Cleared all filters and expanded items']
       break
       
@@ -275,10 +325,19 @@ const filteredExperience = computed(() => {
     )
   }
   
-  // Sort by date (newest first)
+  // Sort by date (newest first) - parse dates properly
   return filtered.sort((a, b) => {
-    const dateA = new Date(a.start)
-    const dateB = new Date(b.start)
+    const parseDate = (dateStr) => {
+      if (dateStr === 'Present') return new Date()
+      const parts = dateStr.match(/(\w+)\s+(\d+)/)
+      if (parts) {
+        const monthMap = { Jan: 0, Feb: 1, Mar: 2, Apr: 3, May: 4, Jun: 5, Jul: 6, Aug: 7, Sep: 8, Oct: 9, Nov: 10, Dec: 11 }
+        return new Date(parseInt(parts[2]), monthMap[parts[1]], 1)
+      }
+      return new Date(0)
+    }
+    const dateA = parseDate(a.start)
+    const dateB = parseDate(b.start)
     return dateB - dateA
   })
 })
@@ -300,14 +359,23 @@ const filteredExperience = computed(() => {
   animation: fade-in 0.3s ease-out;
 }
 
-.expand-enter-active,
-.expand-leave-active {
-  transition: all 0.3s ease;
-  max-height: 1000px;
+.expand-enter-active {
+  transition: all 0.3s ease-out;
   overflow: hidden;
 }
 
-.expand-enter-from,
+.expand-leave-active {
+  transition: all 0.3s ease-in;
+  overflow: hidden;
+}
+
+.expand-enter-from {
+  max-height: 0;
+  opacity: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 .expand-leave-to {
   max-height: 0;
   opacity: 0;

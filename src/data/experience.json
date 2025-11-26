@@ -7,15 +7,17 @@
     "duration": "1 yr 2 mos",
     "location": "Berlin, Germany",
     "type": "Hybrid",
-    "summary": "Working in large-scale e-health monorepo, implementing features for patients & healthcare professionals with focus on accessibility and code quality.",
+    "summary": "Building scalable e-health solutions in a large-scale Angular monorepo, delivering features for patients and healthcare professionals with focus on accessibility and code quality.",
     "details": [
-      "Working in large-scale e-health monorepo with modern Angular architecture",
-      "Implement feature development for patients & healthcare professionals",
-      "Collaborate with QA + UX teams to implement precise, accessible UI",
-      "Introduce frontend improvements and code review practices",
-      "Maintain high code quality standards in enterprise healthcare environment"
+      "Working in large-scale e-health monorepo with modern Angular architecture and Nx workspace",
+      "Implement feature development for patients & healthcare professionals with precise UI/UX requirements",
+      "Collaborate with QA + UX teams to implement accessible, compliant healthcare interfaces",
+      "Introduce frontend improvements, code review practices, and performance optimizations",
+      "Maintain high code quality standards in enterprise healthcare environment",
+      "Work with Angular Signals, Tailwind CSS, and modern frontend patterns",
+      "Participate in Agile ceremonies and cross-functional team collaboration"
     ],
-    "tech": ["Angular", "Nx", "Signals", "Tailwind", "GitLab CI", "UI/UX", "Agile", "TypeScript"]
+    "tech": ["Angular", "TypeScript", "Nx", "Signals", "Tailwind CSS", "GitLab CI", "UI/UX", "Agile", "Accessibility", "Monorepos"]
   },
   {
     "role": "Frontend Developer",
@@ -25,16 +27,17 @@
     "duration": "3 yrs 2 mos",
     "location": "Berlin, Germany",
     "type": "Full-time",
-    "summary": "Developed FastTrack statistical computing environment, focusing on E2E testing, legacy refactoring, and Agile collaboration.",
+    "summary": "Developed FastTrack statistical computing environment for clinical trials, focusing on E2E testing, legacy refactoring, and Agile collaboration.",
     "details": [
-      "Worked on FastTrack: a statistical computing environment for clinical trials",
-      "E2E testing with Cypress for reliable test coverage",
-      "Refactoring legacy codebases to modern Angular patterns",
-      "Agile collaboration (Scrum) with cross-functional teams",
-      "Component library development and UI/UX improvements",
-      "Continuous integration and deployment workflows"
+      "Worked on FastTrack: a statistical computing environment for clinical trial data analysis",
+      "Implemented comprehensive E2E testing with Cypress for reliable test coverage and regression prevention",
+      "Refactored legacy codebases to modern Angular patterns, improving maintainability and performance",
+      "Agile collaboration (Scrum) with cross-functional teams including data scientists and statisticians",
+      "Developed reusable component library and UI/UX improvements for complex data visualization",
+      "Established continuous integration and deployment workflows with Jenkins",
+      "Mentored junior developers and contributed to technical decision-making"
     ],
-    "tech": ["Angular", "Git", "RxJS", "Akita", "Jenkins", "Cypress", "Unit tests", "UI/UX", "TypeScript"]
+    "tech": ["Angular", "TypeScript", "RxJS", "Akita", "Jenkins", "Cypress", "Unit Testing", "UI/UX", "Git", "Agile", "Scrum"]
   },
   {
     "role": "Full-stack Developer",
@@ -44,16 +47,17 @@
     "duration": "2 yrs",
     "location": "Tunisia",
     "type": "Full-time",
-    "summary": "Contributed to Almerys healthcare project and mobile POS systems, implementing state management and full-stack solutions.",
+    "summary": "Delivered full-stack healthcare and mobile POS solutions, implementing state management patterns and backend APIs with Spring Boot and MongoDB.",
     "details": [
-      "Contributed to Almerys project (Spring Boot, MongoDB, RxJS, NGRX, Keycloak, GitLab CI)",
-      "Full-stack work for be-ys (mobile POS projects)",
-      "Insurance claims system: scheduled jobs, refactoring, JUnit + Mockito tests",
-      "Introduced state management with RxJS + NGRX",
-      "Scrum team: Sprint planning, Daily meetings, Retrospectives",
-      "Backend API development and database optimization"
+      "Contributed to Almerys healthcare project using Spring Boot, MongoDB, RxJS, NGRX, Keycloak, and GitLab CI",
+      "Developed full-stack solutions for be-ys mobile POS projects with real-time transaction processing",
+      "Built insurance claims system with scheduled jobs, comprehensive refactoring, and JUnit + Mockito test coverage",
+      "Introduced state management architecture with RxJS + NGRX, improving application scalability",
+      "Participated in Scrum team activities: Sprint planning, Daily standups, and Retrospectives",
+      "Developed RESTful backend APIs and optimized database queries for performance",
+      "Collaborated with mobile teams to integrate backend services with React Native applications"
     ],
-    "tech": ["Spring Boot", "MongoDB", "RxJS", "NGRX", "Keycloak", "GitLab CI", "JUnit", "Mockito", "Angular", "Node.js"]
+    "tech": ["Spring Boot", "Java", "MongoDB", "RxJS", "NGRX", "Keycloak", "GitLab CI", "JUnit", "Mockito", "Angular", "Node.js", "REST APIs", "Agile"]
   },
   {
     "role": "Freelancer",
@@ -63,16 +67,17 @@
     "duration": "2 yrs 6 mos",
     "location": "Tunisia",
     "type": "Freelance",
-    "summary": "Delivered full-stack solutions including TaskBoard for private schools, backend APIs, and AI-based mobile applications.",
+    "summary": "Delivered custom full-stack solutions including school management systems, backend APIs, and AI-powered mobile applications with brand recognition features.",
     "details": [
-      "TaskBoard for private school (Angular, Firebase, Node.js, Docker)",
-      "Backend API for mobile apps (Express.js, Swagger, Node.js)",
-      "AI-based mobile app for brand recognition and promotions",
-      "Implemented authentication, favorites, history, push notifications",
-      "Client consultation and project management",
-      "Full-stack development and deployment"
+      "Developed TaskBoard for private school: Angular frontend, Firebase backend, Node.js APIs, Docker containerization",
+      "Built scalable backend API for mobile apps using Express.js, Swagger documentation, and Node.js",
+      "Created AI-based mobile app for brand recognition and promotions with machine learning integration",
+      "Implemented authentication systems, favorites management, user history tracking, and push notifications",
+      "Managed client relationships, project timelines, and technical requirements",
+      "Handled full-stack development, deployment, and maintenance of multiple projects",
+      "Optimized applications for performance and scalability"
     ],
-    "tech": ["Angular", "Node.js", "React Native", "Firebase", "Express.js", "Swagger", "Docker", "JavaScript"]
+    "tech": ["Angular", "Node.js", "Express.js", "React Native", "Firebase", "Swagger", "Docker", "JavaScript", "REST APIs", "Authentication"]
   },
   {
     "role": "React.js / React Native Instructor",
@@ -82,13 +87,15 @@
     "duration": "2 months",
     "location": "Tunis, Tunisia",
     "type": "Part-time",
-    "summary": "Taught React.js and React Native development to students, covering modern frontend patterns and mobile app development.",
+    "summary": "Taught React.js and React Native development, covering modern frontend patterns, hooks, state management, and mobile app development best practices.",
     "details": [
-      "Taught React.js fundamentals and advanced patterns",
-      "React Native mobile app development",
-      "Hands-on project-based learning approach",
-      "Mentored students on best practices and code quality"
+      "Taught React.js fundamentals including components, props, state, and lifecycle methods",
+      "Covered advanced React patterns: Hooks, Context API, and performance optimization",
+      "Instructed React Native mobile app development with cross-platform considerations",
+      "Delivered hands-on project-based learning with real-world examples",
+      "Mentored students on best practices, code quality, and debugging techniques",
+      "Created course materials and exercises for effective learning outcomes"
     ],
-    "tech": ["React", "React Native", "JavaScript", "Teaching", "Mentoring"]
+    "tech": ["React", "React Native", "JavaScript", "Teaching", "Mentoring", "Frontend"]
   }
 ]
