@@ -73,16 +73,16 @@
               <span class="text-green-500">--medium</span>
               <span class="text-green-400">→</span>
               <a 
-                href="https://medium.com/@rebaiahmed" 
+                href="https://medium.com/@ahmedrebai" 
                 target="_blank"
                 rel="noopener noreferrer"
                 class="text-green-200 hover:text-green-100 hover:underline transition-colors"
               >
-                medium.com/@rebaiahmed
+                medium.com/@ahmedrebai
               </a>
             </div>
             <button
-              @click="copyToClipboard('https://medium.com/@rebaiahmed', 'medium')"
+              @click="copyToClipboard('https://medium.com/@ahmedrebai', 'medium')"
               class="opacity-0 group-hover:opacity-100 transition-opacity text-green-500 hover:text-green-300 ml-4"
               :title="copied.medium ? 'Copied!' : 'Copy link'"
             >
