@@ -27,8 +27,21 @@ jobs:
       - name: Build project
         run: npm run build
 
+      - name: Ensure .nojekyll exists
+        run: touch dist/.nojekyll
+
+      - name: Verify build output
+        run: |
+          echo "Build output structure:"
+          ls -la dist/
+          echo "Assets:"
+          ls -la dist/assets/ || echo "No assets folder"
+          echo "Checking index.html:"
+          cat dist/index.html
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: dist
+          cname: false
